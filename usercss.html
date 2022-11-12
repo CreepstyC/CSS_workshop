@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>  
-        <title>usercss.html</title>
-    </head>
-    <body>
-        <form>
-            País
-            <select id="id_pais">
-                <option value="">...</option>
+
+<head>
+    <title>usercss.html</title>
+    <link rel="stylesheet" href="usercss.css">
+</head>
+
+<body>
+    <form>
+        <div class="title">Completa tus datos</div>
+        <div class="input-container ic1">
+            <input type="text" id="nombre" class="input" placeholder=" " />
+            <div class="cut"></div>
+            <label for="nombre" class="placeholder">Nombre</label>
+        </div>
+        <div class="input-container ic2">
+            <input type="text" id="apellido" class="input" placeholder=" ">
+            <div class="cut"></div>
+            <label for="apellido" class="placeholder">Apellido</label>
+        </div>
+        <div class="input-container ic2">
+            <select id="id_pais" class="input" aria-placeholder=" ">
+                <option value=""></option>
                 <option value="Afganistan">Afghanistan</option>
                 <option value="Albania">Albania</option>
                 <option value="Algeria">Algeria</option>
@@ -256,37 +270,37 @@
                 <option value="Zambia">Zambia</option>
                 <option value="Zimbabwe">Zimbabwe</option>
             </select>
-            <br><br>
-            Nombre
-            <input type="text" id="nombre">
-            <br><br>
-            Apellido
-            <input type="text" id="apellido">
-            <br><br>
-            Dirección
-            <input type="text" id="direccion">
-            <br><br>
-            TipoDocumento
-            <select>
-                <option>...</option>
-                <option>TI</option>
-                <option>CC</option>
-                <option>CE</option>
-                <option>otro...</option>
-            </select>
-            <input type="number" id="ccusuario">
-            <br><br>
-            Contraseña
-            <input type="password" id="ccpaswd">
-            <br><br>
-            Email
-            <input type="email" id="email">
-            <br><br>
-            Teléfono
-            <input type="number">
-            <br><br>
-            <button type="reset">Reestablecer</button>
-            <button type="submit">Enviar</button>
-        </form>
-    </body>
+            <div class="cut"></div>
+            <label for="id_pais" class="placeholder">País</label>
+        </div>
+        <div class="input-container ic2">
+            <input type="text" id="direccion" class="input" placeholder=" ">
+            <div class="cut"></div>
+            <label for="direccion" class="placeholder">Dirección</label>
+        </div>
+        <div class="input-container ic2">
+            <input type="number" id="ccusuario" class="input" placeholder=" ">
+            <div class="cut"></div>
+            <label for="ccusuario" class="placeholder">Documento</label>
+        </div>
+        <div class="input-container ic2">
+            <input type="password" id="ccpassword" class="input" placeholder=" ">
+            <div class="cut"></div>
+            <label for="ccpassword" class="placeholder">Contraseña</label>
+        </div>
+        <div class="input-container ic2">
+            <input type="email" id="email" class="input" placeholder=" ">
+            <div class="cut"></div>
+            <label for="email" class="placeholder">Email</label>
+        </div>
+        <div class="input-container ic2">
+            <input type="number" id="telefono" class="input" placeholder=" ">
+            <div class="cut"></div>
+            <label for="telefono" class="placeholder">Teléfono</label>
+        </div>
+        <button type="reset" class="submit">Reestablecer</button>
+        <button type="submit" class="submit">Enviar</button>
+    </form>
+</body>
+
 </html>
