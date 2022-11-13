@@ -5,25 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>usercss</title>
-    <link rel="stylesheet" href="usercss.css">
+    <title>userbootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+    <style>
+        body {
+            align-items: center;
+            background-color: #eee;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+        }
+    </style>
 </head>
 
 <body>
     <form>
-        <div class="title">Completa tus datos</div>
-        <div class="input-container ic1">
-            <input type="text" id="nombre" class="input" placeholder=" " />
-            <div class="cut"></div>
-            <label for="nombre" class="placeholder">Nombre</label>
+        <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="name" />
         </div>
-        <div class="input-container ic2">
-            <input type="text" id="apellido" class="input" placeholder=" ">
-            <div class="cut"></div>
-            <label for="apellido" class="placeholder">Apellido</label>
+        <div class="mb-3">
+            <label for="lastname" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="lastname" />
         </div>
-        <div class="input-container ic2">
-            <select id="id_pais" class="input" aria-placeholder=" "> 
+        <div class="mb-3">
+            <label for="country" class="form-label">País</label>
+            <select id="country" class="form-control">
                 <option value=""></option>
                 <option value="Afganistan">Afghanistan</option>
                 <option value="Albania">Albania</option>
@@ -273,37 +282,37 @@
                 <option value="Zambia">Zambia</option>
                 <option value="Zimbabwe">Zimbabwe</option>
             </select>
-            <div class="cut"></div>
-            <label for="id_pais" class="placeholder">País</label>
         </div>
-        <div class="input-container ic2">
-            <input type="text" id="direccion" class="input" placeholder=" ">
-            <div class="cut"></div>
-            <label for="direccion" class="placeholder">Dirección</label>
+        <div class="mb-3">
+            <label for="address" class="form-label">Dirección</label>
+            <input type="text" class="form-control" id="address" />
         </div>
-        <div class="input-container ic2">
-            <input type="number" id="ccusuario" class="input" placeholder=" ">
-            <div class="cut"></div>
-            <label for="ccusuario" class="placeholder">Documento</label>
+        <div class="mb-3">
+            <label for="iduser" class="form-label">Documento</label>
+            <select class="form-control">
+                <option>...</option>
+                <option value="TI">TI</option>
+                <option value="CC">CC</option>
+                <option value="CE">CE</option>
+            </select>
+            <br>
+            <input type="number" class="form-control" id="iduser"/>
         </div>
-        <div class="input-container ic2">
-            <input type="password" id="ccpassword" class="input" placeholder=" ">
-            <div class="cut"></div>
-            <label for="ccpassword" class="placeholder">Contraseña</label>
+        <div class="mb-3">
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="password"/>
         </div>
-        <div class="input-container ic2">
-            <input type="email" id="email" class="input" placeholder=" ">
-            <div class="cut"></div>
-            <label for="email" class="placeholder">Email</label>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email"/>
         </div>
-        <div class="input-container ic2">
-            <input type="number" id="telefono" class="input" placeholder=" ">
-            <div class="cut"></div>
-            <label for="telefono" class="placeholder">Teléfono</label>
+        <div class="mb- 3">
+            <label for="phone" class="form-label">Teléfono</label>
+            <input type="number" class="form-control" id="email"/>
         </div>
-        <button type="reset" class="submit">Reestablecer</button>
-        <button type="submit" class="submit">Enviar</button>
-        <p>hola esto es un parrafo</p>
+        <br><br>
+        <button type="reset" class="btn btn-secondary">Reestablecer</button>
+        <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
 </body>
 
