@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carcss</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="carcss.css">
+</head>
+
+<body>
+    <h1>Rellena el Formulario</h1>
+    <form>
+
+        <article class="left_article">
+            <div>
+                <label for="id_movidoa">Tipo de combustible</label>
+                <select id="id_movidoa" class="select">
+                    <option value=NULL></option>
+                    <option value="1">Gasolina</option>
+                    <option value="2">Diésel</option>
+                    <option value="3">Etanol</option>
+                    <option value="4">Hidrógeno</option>
+                    <option value="5">Biodiesel</option>
+                    <option value="6">Electricidad</option>
+                    <option value="7">Metanol</option>
+                    <option value="8">P.Series</option>
+                    <option value="9">GasNatural</option>
+                    <option value="10">GLP</option>
+                </select>
+            </div>
+            <div>
+                <label for="id_tipocoche">Tipo de coche</label>
+                <select id="id_tipocoche" class="select">
+                    <option value=NULL></option>
+                    <option value="1">Pequeño</option>
+                    <option value="2">Familiar</option>
+                    <option value="3">Berlina</option>
+                    <option value="4">Monovolumen</option>
+                    <option value="5">Deportivo</option>
+                    <option value="6">Furgoneta</option>
+                    <option value="7">Limusina</option>
+                </select>
+            </div>
+            <div>
+                <label for="id_estado">Estado del coche</label>
+                <select id="id_estado" class="select">
+                    <option value=NULL></option>
+                    <option value="1">Nuevo</option>
+                    <option value="2">Usado</option>
+                </select>
+            </div>
+            <div>
+                <label for="id_marca">Marca de coche</label>
+                <select id="id_marca" class="select">
+                    <option value=NULL></option>
+                    <option value="1">Audi</option>
+                    <option value="2">BMW</option>
+                    <option value="3">Chevrolet</option>
+                    <option value="4">Fiat</option>
+                    <option value="5">Ford</option>
+                    <option value="6">Honda</option>
+                    <option value="7">Hyunday</option>
+                    <option value="8">Jeep</option>
+                    <option value="9">Kia</option>
+                    <option value="10">Mazda</option>
+                    <option value="11">Mercedes-Benz</option>
+                    <option value="12">Nissan</option>
+                    <option value="13">Suzuki</option>
+                    <option value="14">Toyota</option>
+                    <option value="15">VolksWagen</option>
+                </select>
+            </div>
+            <div>
+                <label for="id_usr">Tipo de Usuario</label>
+                <select id="id_usr" class="select">
+                    <option value=NULL></option>
+                    <option value="1">Persona Natural</option>
+                    <option value="2">Empresa</option>
+                </select>
+            </div>
+        </article>
+        <article class="left_article">
+            <div>
+                <label for="modelo">Modelo</label>
+                <input id="modelo" type="text" maxlength="60">
+            </div>
+            <div>
+                <label for="anio">Año</label>
+                <input id="anio" type="text" maxlength="4">
+            </div>
+            <div>
+                <label for="detalle">Detalle</label>
+                <input id="detalle" type="text">
+            </div>
+            <div>
+                <label for="caja">Caja</label>
+                <input type="number" id="caja">
+            </div>
+            <div>
+                <label for="motor">Motor</label>
+                <input id="motor" type="number">
+            </div>
+            <br>
+        </article>
+        <article class="left_article">
+            <div>
+                <label for="fechapub">Fecha de Publicación</label>
+                <input id="fechapub" type="text" maxlength="10">
+            </div>
+            <div>
+                <label for="precio">Precio</label>
+                <input id="precio" type="number">
+            </div>
+            <div>
+                <label for="moneda">Moneda</label>
+                <input id="moneda" type="text" maxlength="3">
+            </div>
+            <div>
+                <label for="cc_destac">Seguro de auto</label>
+                <select id="cc_destac" class="select">
+                    <option value=NULL></option>
+                    <option value="SI">Si</option>
+                    <option value="NO">No</option>
+                </select>
+            </div>
+        </article>
+        <article class="right_article">
+            <div>
+                <label for="cc_pic01">Descripción 1</label>
+                <textarea id="cc_pic01" class="descripcion"></textarea>
+            </div>
+            <div>
+                <label for="cc_pic02">Descripción 2</label>
+                <textarea id="cc_pic02" class="descripcion"></textarea>
+            </div>
+            <div>
+                <label for="cc_pic03">Descripción 3</label>
+                <textarea id="cc_pic03" class="descripcion"></textarea>
+            </div>
+        </article>
+        <article class="button">
+            <button type="reset">Reestablecer</button>
+            <button type="submit">Enviar</button>
+        </article>
+    </form>
+    <footer>
+    </footer>
+</body>
+
+</html>

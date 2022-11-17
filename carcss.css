@@ -1,0 +1,71 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: #eee;
+}
+
+h1 {
+    margin: 25px 0 20px 30px;
+    text-align: left;
+}
+
+article {
+    margin: 20px 25px 50px 50px;
+    width: 45%;
+}
+
+.left_article {
+    float: left;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+label {}
+
+.select:hover {
+    cursor: pointer;
+}
+
+article.right_article {
+    margin: 20px 65px 50px 50px;
+    width: 40%;
+    float: right;
+}
+
+.descripcion {
+    width: 100%;
+    height: 80px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+button {
+    margin: 0 20px 0 20px;
+    width: 20%;
+    height: 40px;
+    display: inline-block;
+    border: 0;
+    background-color: rgb(86, 104, 20);
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    border-radius: 100px;
+    transition: color 0.3s ease;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(120, 143, 36);
+}
