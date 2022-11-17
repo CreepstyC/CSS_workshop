@@ -1,7 +1,7 @@
 html {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Montserrat Alternates', sans-serif;
-    background-color: #eee;
+    background-color: rgb(245, 245, 245);
 }
 
 h1 {
@@ -53,8 +53,8 @@ article.right_article {
 }
 
 button {
-    margin: 0 20px 0 20px;
-    width: 20%;
+    margin: 0 20px 30px 20px;
+    width: 120px;
     height: 40px;
     display: inline-block;
     border: 0;
@@ -65,7 +65,7 @@ button {
     transition: color 0.3s ease;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
     background-color: rgb(120, 143, 36);
 }
