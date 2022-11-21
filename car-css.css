@@ -29,8 +29,6 @@ select {
     box-sizing: border-box;
 }
 
-label {}
-
 .select:hover {
     cursor: pointer;
 }
